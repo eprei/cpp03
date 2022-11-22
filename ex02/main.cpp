@@ -1,11 +1,12 @@
 #include "ClapTrap.hpp"
+#include "FragTrap.hpp"
 
 int main()
 {
-	ClapTrap tito("Tito");
-	ClapTrap mario("Mario");
-	ClapTrap arthur("Arthur");
-	ClapTrap clonArthur(arthur);
+	FragTrap tito("Tito");
+	FragTrap mario("Mario");
+	FragTrap arthur("Arthur");
+	FragTrap clonArthur(arthur);
 
 	clonArthur.printStatus();
 
@@ -23,19 +24,15 @@ int main()
 	mario.attack("Leonidas");
 	mario.attack("Leonidas");
 	mario.attack("Leonidas");
-	mario.attack("Leonidas");
-	mario.attack("Leonidas");
-	mario.attack("Leonidas");
-	mario.attack("Leonidas");
-	mario.attack("Leonidas");
-	mario.attack("Leonidas");
 	mario.printStatus();
+	mario.highFivesGuys();
 
 	arthur.printStatus();
-	arthur.takeDamage(5);
-	arthur.takeDamage(5);
+	arthur.takeDamage(50);
+	arthur.takeDamage(50);
 	arthur.beRepaired(40);
 	arthur.attack("Leonidas");
+	arthur.highFivesGuys();
 	arthur.printStatus();
 
 	return (0);

@@ -1,11 +1,12 @@
 #include "ClapTrap.hpp"
+#include "ScavTrap.hpp"
 
 int main()
 {
-	ClapTrap tito("Tito");
-	ClapTrap mario("Mario");
-	ClapTrap arthur("Arthur");
-	ClapTrap clonArthur(arthur);
+	ScavTrap tito("Tito");
+	ScavTrap mario("Mario");
+	ScavTrap arthur("Arthur");
+	ScavTrap clonArthur(arthur);
 
 	clonArthur.printStatus();
 
@@ -30,12 +31,14 @@ int main()
 	mario.attack("Leonidas");
 	mario.attack("Leonidas");
 	mario.printStatus();
+	mario.guardGate();
 
 	arthur.printStatus();
-	arthur.takeDamage(5);
-	arthur.takeDamage(5);
+	arthur.takeDamage(50);
+	arthur.takeDamage(50);
 	arthur.beRepaired(40);
 	arthur.attack("Leonidas");
+	arthur.guardGate();
 	arthur.printStatus();
 
 	return (0);

@@ -20,7 +20,7 @@ class ClapTrap{
 
 		void printStatus( void );
 
-	private:
+	protected:
 
 		std::string	_name;
 		int			_hitPoints;

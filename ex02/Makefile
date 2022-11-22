@@ -1,9 +1,9 @@
 CXX = c++
 # CXX = g++-12
 
-NAME = ClapTrap
+NAME = FragTrap
 
-SRCS = main.cpp ClapTrap.cpp
+SRCS = main.cpp ClapTrap.cpp FragTrap.cpp
 
 CFLAGS = -Werror -Wextra -Wall -std=c++98 #-g #-pedantic
 
